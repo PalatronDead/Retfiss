@@ -58,6 +58,7 @@ img{
 }
 
 .content .logo img{
+    border-radius: 50%;
     opacity: 0.8;
 }
 
@@ -80,6 +81,15 @@ img{
     margin: auto;
     overflow: hidden;
     padding: 4rem 1rem;
+}
+
+.profile-sm{
+    margin-left: 1rem;
+}
+.logo-sm, .profile-sm{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .products .container .title{
@@ -124,6 +134,12 @@ img{
     grid-gap: 1rem;
 }
 
+.grid-2ch{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
 .grid-3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -150,6 +166,30 @@ img{
 
 .footer{
     padding: 2.2rem;
+}
+
+/* Media Queries */
+
+@media(max-width: 740px){
+    .content .logo img{
+        width: 70%;
+        border-radius: 50%;
+        opacity: 0.8;
+    }
+    .content{
+        left: 41%;
+    }
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-3{
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-4{
+        grid-template-columns: 1fr;
+    }
 }
 
 
